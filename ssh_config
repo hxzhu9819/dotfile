@@ -1,0 +1,18 @@
+### CAEN
+Host caen
+  HostName login-course-2fa.engin.umich.edu
+  User hxzhu
+  ControlPath ~/.ssh/_%r@%h:%p
+  ControlPersist 7200
+
+Host github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  User hxzhu9819
+  IdentityFile ~/.ssh/id_rsa
+
+Host gitlab
+  HostName gitlab.eecs.umich.edu
+  PreferredAuthentications publickey
+  User git
+  IdentityFile ~/.ssh/id_rsa_gitlab
